@@ -1,0 +1,64 @@
+{
+  "name": "chatakAFCS",
+  "description": "Sample app for KaiOS development",
+  "launch_path": "/index.html",
+  "type": "certified",  
+  "permissions": {
+    "desktop-notification": {},
+    "serviceworker": {},
+    "themeable": {}
+  },  
+  "default_locale": "en-US",
+  "locales": {
+    "en-US": {
+      "name": "chatakAFCS",
+      "description": "chatakAFCS app, powered by React"
+    }
+  },
+  "icons": {
+    "128": "/hello_128.png"
+  },
+  "orientation": "default",
+  "activities": {},
+  "secure_element_access": ["*/A0*", "eSE/*"],
+  "messages": [
+    { "notification": "/index.html" },
+    { "serviceworker-notification": "/index.html" },
+    { "nfc-hci-event-transaction": "/index.html" }
+  ],
+  "permissions": {
+    "serviceworker": {},
+    "desktop-notification": {},
+    "nfc": {},
+    "nfc-manager": {},
+    "secureelement-manage": {},
+    "nfc-hci-events": {},
+    "webapps-manage": {},
+    "device-storage:sdcard": {
+      "name": "device-storage:sdcard",
+      "access": "readwrite"
+    },
+    "settings": { "access": "readwrite" },
+    "sms": {},
+    "mobileconnection": {},
+    "systemXHR": {
+      "description": "This permission is required to call web api"
+    },
+    "tcp-socket" : {
+      "description" : "Ceate TCP sockets and communicate over them."
+    },
+    "telephony": {
+    "description": "Required to control telephony functions"
+    },
+    "geolocation" : {}
+  },
+  "datastores-access": {
+    "jio_service_store": {
+      "access": "readonly",
+      "description": "NFC Contactless payments"
+    }
+  },
+  "chrome": {
+    "statusbar": "overlap"
+  }
+}

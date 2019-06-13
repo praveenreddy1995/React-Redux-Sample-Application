@@ -1,0 +1,19 @@
+{
+  "name": "Super Racer 2000",
+  "short_name": "Racer2K",
+  "icons": [{
+        "src": "icon1.png",
+        "sizes": "64x64",
+        "type": "image/webp"
+      }, {
+        "src": "icon2.png",
+        "sizes": "64x64"
+      }, {
+        "src": "icon3.png",
+        "sizes": "128x128",
+        "density": 2
+      }],
+  "start_url": "index.html",
+  "display": "fullscreen",
+  "orientation": "landscape"
+}
